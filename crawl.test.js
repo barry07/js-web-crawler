@@ -41,3 +41,20 @@ test('normalizeURL strip capital letters', () => {
     expect(actual).toEqual(expected)
 })
 
+test('getURLSFromHTML', () => {
+    const inputHTMLBoday = `
+    <html>
+        <body>
+            <a href="https://blog.boot.dev/">
+            Boot.dev Blog
+            </a>
+        </body>
+    </html>
+    `
+    const inputbaseURL = "https://blog.boot.dev"
+    const actual = getURLSFromHTML(inputHTMLBoday, inputbaseURL)
+    const expected = ["https://blog.boot.dev/"]
+
+    expect(actual).toEqual(expected)
+})
+
