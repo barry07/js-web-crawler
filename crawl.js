@@ -1,4 +1,4 @@
-// create stub function
+// create stub functions
 
 function normalizeURL(urlString) {
     //create url object
@@ -11,6 +11,12 @@ function normalizeURL(urlString) {
     return hostPath
 }
 
+function getURLSFromHTML(htmlBody, baseURL) {
+    const urls =[]
+    return urls
+}
+
 module.exports = {
-    normalizeURL
+    normalizeURL,
+    getURLSFromHTML
 }

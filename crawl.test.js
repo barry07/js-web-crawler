@@ -1,5 +1,5 @@
 // import test function
-const {normalizeURL} = require('./crawl.js')
+const {normalizeURL, getURLSFromHTML} = require('./crawl.js')
 
 // import functions from Jest
 
